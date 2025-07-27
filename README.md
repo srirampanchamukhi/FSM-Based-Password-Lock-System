@@ -62,13 +62,13 @@ Each testbench verifies one key aspect of the FSM:
 fsm-password-lock/
 | File                                | Description                                      |
 |-----------------------------------------------------------------|----------------------------------------|
-   ['fsm_password_lock.v'](designs/fsm_password_lock.v)          |   Main FSM module                      |
-    ['fsm_password_lock_tb.v'](testbench/fsm_password_lock_tb.v) |   Basic correct password test          |
-   ['fsm_wrong_password.v'](testbench/fsm_wrong_password.v)      |   Tests wrong attempts without lockout |
-    ['fsm_lockout.v'](testbench/fsm_lockout.v)                   |   Lockout test after 3 wrong tries     |
-    ['fsm_view_password.v'](testbench/fsm_view_password.v)       |   View password when unlocked          |
-   ['fsm_set_new_password.v'](testbench/fsm_set_new_password.v)  |   Change password functionality        |
-   ['fsm_full_flow.v'](testbench/fsm_full_flow.v)                |   End-to-end functional flow test      |
+|   ['fsm_password_lock.v'](designs/fsm_password_lock.v)          |   Main FSM module                      |
+|   ['fsm_password_lock_tb.v'](testbench/fsm_password_lock_tb.v)  |   Basic correct password test          |
+|   ['fsm_wrong_password.v'](testbench/fsm_wrong_password.v)      |   Tests wrong attempts without lockout |
+|    ['fsm_lockout.v'](testbench/fsm_lockout.v)                   |   Lockout test after 3 wrong tries     |
+|    ['fsm_view_password.v'](testbench/fsm_view_password.v)       |   View password when unlocked          |
+|   ['fsm_set_new_password.v'](testbench/fsm_set_new_password.v)  |   Change password functionality        |
+|   ['fsm_full_flow.v'](testbench/fsm_full_flow.v)                |   End-to-end functional flow test      |
 
 
 

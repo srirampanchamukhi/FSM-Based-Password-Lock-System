@@ -40,13 +40,12 @@ Each testbench verifies one key aspect of the FSM:
 
 | Testbench File               | Description                              |
 |-----------------------------|------------------------------------------|
-| `fsm_tb_correct.v`          | Tests correct password unlocking         |
-| `fsm_tb_wrong_password.v`   | Tests wrong attempts without lockout     |
-| `fsm_tb_lockout.v`          | Verifies alarm triggers after 3 fails    |
-| `fsm_tb_reset.v`            | Tests reset after lockout                |
-| `fsm_tb_set_new_password.v` | Verifies password change functionality   |
-| `fsm_tb_view_password.v`    | Confirms viewing password in unlocked    |
-| `fsm_tb_full_flow.v`        | 🚀 Full system test (stress test case)    |
+| `fsm_password_lock_tb.v`          | Tests correct password unlocking         |
+| `fsm_wrong_password.v`   | Tests wrong attempts without lockout     |
+| `fsm_lockout.v`          | Verifies alarm triggers after 3 fails    |
+| `fsm_set_new_password.v` | Verifies password change functionality   |
+| `fsm_view_password.v`    | Confirms viewing password in unlocked    |
+| `fsm_full_flow.v`        | 🚀 Full system test (stress test case)    |
 
 ---
 
@@ -60,4 +59,19 @@ Each testbench verifies one key aspect of the FSM:
 ---
 
 ## 📁 Project Structure
+fsm-password-lock/
+│
+├── designs/
+│   └── fsm_password_lock.v          # Main FSM module
+│
+├── testbench/
+│   ├── fsm_password_lock_tb.v             # Basic correct password test
+│   ├── fsm_wrong_password.v
+│   ├── fsm_lockout.v             # Lockout test after 3 wrong tries
+│   ├── fsm_view_password.v       # View password when unlocked
+│   ├── fsm_set_new_password.v    # Change password functionality
+│   └── fsm_full_flow.v           # End-to-end functional flow test
+│
+└── README.md                        # This file
+
 
